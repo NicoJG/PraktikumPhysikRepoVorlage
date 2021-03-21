@@ -1,0 +1,16 @@
+\documentclass[
+  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+  captions=tableheading,  % Tabellenüberschriften
+  titlepage=firstiscover, % Titelseite ist Deckblatt
+  parskip=half,           % Absätze haben kleinen Abstand und werden nicht eingerückt
+  ngerman                 % richtige Übersetzungen (vor Allem für siunitx)
+]{scrartcl}
+
+\input{../../default/latex/packages.tex}         % alle Latex-Pakete mit Einstellungen
+\input{../../default/latex/custom-commands.tex}  % Eigene LaTeX-Commands
+\input{../../default/latex/authors.tex}          % Authoren-Informationen für die Titelseite
+
+% Biblatex Quellen
+\addbibresource{../../default/bib/lit.bib}
+\addbibresource{../../default/bib/programme.bib}
+\addbibresource{../../default/bib/versuche.bib}

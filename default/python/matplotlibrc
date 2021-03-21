@@ -1,0 +1,35 @@
+# pgf-Backend benutzen
+backend : pgf
+
+# Größe der Zeichenfläche in Zoll
+figure.figsize : 5.78, 3.57
+
+# Serifenfont benutzen
+font.family : serif
+
+# Fontgrößen
+font.size : 11
+legend.fontsize : medium
+xtick.labelsize : 9
+ytick.labelsize : 9
+
+# unsere Fonteinstellungen benutzen
+pgf.rcfonts : False
+
+# TeX benutzen
+text.usetex : True
+pgf.texsystem : lualatex
+pgf.preamble : \input{header-matplotlib.tex}
+
+## Abweichend von der Toolbox-Workshop Vorlage:
+# Schönere Kreis Marker (wenn ihr andere Marker wollt, solltet ihr diesen Abschnitt löschen/auskommentieren)
+lines.markeredgecolor : k
+lines.markeredgewidth : 0.5
+lines.markersize : 4
+
+# Schöneres Grid (und standardmäßig das Grid an)
+axes.grid : True
+axes.grid.which : both
+grid.color : 0.7
+grid.linestyle : --
+grid.linewidth : 0.5

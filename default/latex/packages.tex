@@ -1,9 +1,3 @@
-\documentclass[
-  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
-  captions=tableheading,  % Tabellenüberschriften
-  titlepage=firstiscover, % Titelseite ist Deckblatt
-]{scrartcl}
-
 % Paket float verbessern
 \usepackage{scrhack}
 
@@ -108,10 +102,10 @@
 % Literaturverzeichnis
 \usepackage[
   backend=biber,
+  %natbib=true,     % |
+  %style=numeric,   % |> ändert die Nummerierung und Sortierung des Literaturverzeichnisses
+  %sorting=none     % |
 ]{biblatex}
-% Quellendatenbank
-\addbibresource{lit.bib}
-\addbibresource{programme.bib}
 
 % Hyperlinks im Dokument
 \usepackage[
@@ -127,11 +121,29 @@
 % Trennung von Wörtern mit Strichen
 \usepackage[shortcuts]{extdash}
 
-\author{%
-  AUTOR A\\%
-  \href{mailto:authorA@udo.edu}{authorA@udo.edu}%
-  \and%
-  AUTOR B\\%
-  \href{mailto:authorB@udo.edu}{authorB@udo.edu}%
-}
-\publishers{TU Dortmund – Fakultät Physik}
+
+%--------------------------------------------------------------------------------
+% Ab hier optionale Packages, die nicht in der Toolbox-Workshop Vorlage sind.
+%--------------------------------------------------------------------------------
+
+% Anpassbare Enumerates/Itemizes
+%\usepackage{enumitem}
+
+% Tabellen mit einer Zelle über mehrere Reihen
+%\usepackage{multirow}
+
+% Tabellen aus .csv Dateien
+%\usepackage{csvsimple}
+
+% Floats innerhalb einer Subsection halten: 
+% Hierfür muss in Zeile 78 das below, gelöscht werden
+%\makeatletter
+%\AtBeginDocument{%
+%  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+%    \expandafter\@fb@secFB\subsection
+%  }%
+%}
+%\makeatother
+
+% um "Overfull \hbox" zu debuggen
+%\usepackage{lua-visual-debug}
