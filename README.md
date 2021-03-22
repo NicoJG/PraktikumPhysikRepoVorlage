@@ -4,4 +4,4 @@ Diese Vorlage kann verwendet werden, um eine Ordnerstruktur für das Physik Anf�
 
 Viele Dateien sind der [Vorlage](https://github.com/pep-dortmund/toolbox-workshop/tree/master/latex-template) vom [Toolbox-Workshop](https://toolbox.pep-dortmund.org/) entnommen. (und teilweise abgeändert/angepasst)
 
-TODO: Versuchs Template Ordner, Snippets Ordner
+TODO: Versuchs Template Ordner, Snippets Ordner, Was wenn keine csv Datei da ist?, wofür TEXINPUTS und BIBINPUTS?
