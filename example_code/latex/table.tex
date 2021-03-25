@@ -1,0 +1,37 @@
+% ohne \tableSI
+\begin{table}
+    \centering
+    \caption{Messwerte: Kopplungskapazität $C_\text{k}$ und Ampliduten von $U_{2+}$, $U_{2-}$ und $U_k$}
+    \label{tab:amplituden}
+    \begin{tabular}{c c c c}
+      \toprule 
+      $C_\text{k} \:/\: \si{\nano\farad}$ & $U_{2+} \:/\: \si{\volt}$ & $U_{2-} \:/\: \si{\volt}$ & $U_k \:/\: \si{\volt}$ \\ 
+      \midrule 
+      2.190 & 2.50 & 2.00 & 2.50 \\
+      2.860 & 2.50 & 2.25 & 2.75 \\
+      4.740 & 2.50 & 2.25 & 2.75 \\
+      6.860 & 2.50 & 2.25 & 2.75 \\
+      8.180 & 2.50 & 2.38 & 2.75 \\
+      9.990 & 2.50 & 2.38 & 2.88 \\
+      12.000 & 2.50 & 2.50 & 2.88 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+% mit \tableSI
+\begin{table}
+    \centering
+    \caption{Messergebnisse der Dopplerverschiebung}
+    \begin{tabular}{S[table-format=1.1] S[table-format=3.0] S[table-format=3.0] S[table-format=4.0]}
+        \toprule
+        \tableSI{\dot{v}}{\frac{\liter}{\minute}} & \tableSI{\Delta \nu _{15}}{\hertz} &\tableSI{\Delta \nu _{30}}{\hertz} & \tableSI{\Delta \nu _{60}}{\hertz}  \\
+        \midrule
+        3.0 & 200 & 380 & 670\\
+        3.5 & 260 & 460 & 820\\
+        4.0 & 320 & 600 & 1045\\
+        4.5 & 380 & 720 & 1245\\
+        5.0 & 470 & 850 & 1510\\
+        \bottomrule
+    \end{tabular}
+    \label{tab:dopplerver}
+\end{table}
