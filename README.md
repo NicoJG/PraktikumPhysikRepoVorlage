@@ -6,6 +6,8 @@ Viele Dateien sind der [Vorlage](https://github.com/pep-dortmund/toolbox-worksho
 
 # Konzept der Ordner- und Datei-Struktur
 
+Alle Ordner mit dem Namen "build" werden von git ignoriert. Wenn dies unerwünscht ist müsst ihr die Datei ".gitignore" verändern.
+
 ## default
 
 Dateien, die für fast jeden Versuch genau gleich sein sollen, sind im Ordner "/default" gespeichert.  
