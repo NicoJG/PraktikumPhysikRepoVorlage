@@ -6,6 +6,9 @@ Viele Dateien sind der [Vorlage](https://github.com/pep-dortmund/toolbox-worksho
 
 # Konzept der Ordner- und Datei-Struktur
 
+In einigen Dateien sind, zusätzlich zur Vorlage vom Toolbox Workshop, Ergänzungen enthalten. Diese sind allerdings teilweise auskommentiert.  
+Ich würde empfehlen alle Dateien mal durchzuschauen und die Kommentare zu lesen.  
+
 Alle Ordner mit dem Namen "build" werden von git ignoriert. Wenn dies unerwünscht ist müsst ihr die Datei ".gitignore" verändern.
 
 ## default
