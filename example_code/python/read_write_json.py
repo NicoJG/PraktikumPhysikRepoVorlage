@@ -1,11 +1,9 @@
 # Einzelne Ergebnisse Speichern (damit man nicht print benutzen muss)
 # JSON Dateien werden als Dictionary eingelesen.
 
-
 # wechsle die Working Directory zum Versuchsordner, damit das Python-Script von überall ausgeführt werden kann
 import os
-import pathlib
-os.chdir(pathlib.Path(__file__).absolute().parent.parent.__str__())
+os.chdir(os.path.dirname(__file__)+'/../')
 
 # Imports
 import json
