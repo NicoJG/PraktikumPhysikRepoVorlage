@@ -14,7 +14,7 @@ Alle Ordner mit dem Namen "build" werden von git ignoriert. Wenn dies unerwünsc
 Erklärungen:  
 
 Ordner/Datei | Erklärung | Anders als Toolbox Workshop Vorlage
-- | - | -
+-- | -- | --
 **default/** | Dateien, die für fast jeden Versuch genau gleich sein sollen | nun ist nicht mehr alles in jedem Versuchsordner
 default/bib/ | BibTeX Dateien (Literaturverzeichnis) mit Einträgen die man in vielen Versuchen braucht | 
 default/latex/ | LaTeX Kram den man immer braucht | 
