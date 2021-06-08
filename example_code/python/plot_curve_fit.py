@@ -2,11 +2,12 @@
 # Und Plotte diese Kurve + die Daten
 
 # wechsle die Working Directory zum Versuchsordner, damit das Python-Script von überall ausgeführt werden kann
-import os
-os.chdir(os.path.dirname(__file__)+'/../')
+import os,pathlib
+project_path = pathlib.Path(__file__).absolute().parent.parent
+os.chdir(project_path)
 # benutze die matplotlibrc und header-matplotlib.tex Dateien aus dem default Ordner
-os.environ['MATPLOTLIBRC'] = os.path.dirname(__file__)+'/../../default/python/matplotlibrc'
-os.environ['TEXINPUTS'] =  os.path.dirname(__file__)+'/../../default/python/:'
+os.environ['MATPLOTLIBRC'] = str(project_path.parent/'default'/'python'/'matplotlibrc')
+os.environ['TEXINPUTS'] =  str(project_path.parent/'default'/'python')+':'
 
 # Imports
 import numpy as np
