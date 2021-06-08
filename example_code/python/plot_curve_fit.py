@@ -15,7 +15,7 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
 # Daten einlesen
-x,y,z = np.genfromtxt('data/NAME.csv',delimiter=',',unpack=True)
+x,y,z = np.genfromtxt('data/NAME.csv',delimiter=',',skip_header=1,unpack=True)
 
 # Ausgleichskurven Funktion (hier Ausgleichsgerade)
 def f(x,a,b):
