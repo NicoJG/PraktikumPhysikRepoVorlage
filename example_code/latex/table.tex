@@ -35,3 +35,41 @@
     \end{tabular}
     \label{tab:dopplerver}
 \end{table}
+
+% Trick für lange aber schmale Tabellen: 2 Tabellen nebeneinander
+% 2 tabular Umgebungen in einer table Umgebung
+\begin{table}
+  \centering
+  \caption{Gemessene Spannungen in Abhängigkeit von $\tau$ für die Bestimmung des Diffusionskoeffizienten}
+  \label{tab:diff}
+  \begin{tabular}{S[table-format=2.1] S[table-format=4.0]}
+      \toprule
+      \tableSI{\tau}{\milli\second} & \tableSI{U}{\milli\volt}  \\
+      \midrule
+      0.3 & 1275 \\
+      1.0 & 1258 \\
+      2.0 & 1260 \\
+      4.0 & 1213 \\
+      6.0 & 1103 \\
+      8.0 & 925 \\
+      10.0 & 698 \\
+      10.0 & 639 \\
+      11.0 & 571 \\
+      \bottomrule
+  \end{tabular}
+  \begin{tabular}{S[table-format=2.1] S[table-format=4.0]}
+      \toprule
+      \tableSI{\tau}{\milli\second} & \tableSI{U}{\milli\volt}  \\
+      \midrule
+      12.0 & 461 \\
+      13.0 & 356 \\
+      14.0 & 257 \\
+      15.0 & 194 \\
+      16.0 & 127 \\
+      17.0 & 93 \\
+      18.0 & 65 \\
+      19.0 & 50 \\
+      20.0 & 46 \\
+      \bottomrule
+  \end{tabular}
+\end{table}
